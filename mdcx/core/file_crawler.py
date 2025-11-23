@@ -151,6 +151,8 @@ class FileScraper:
             # 获取该字段的优先级列表
             f_config = self.config.get_field_config(field)
             f_sites = [s for s in f_config.site_prority if s in type_sites]
+            if not f_sites:
+                f_sites = list(type_sites)
             f_lang = f_config.language
 
             reduced.field_log += (
