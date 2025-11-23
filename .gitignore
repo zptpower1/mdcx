@@ -180,3 +180,5 @@ Log/
 # dev files
 dev/
 *.ipynb
+*.bak
+.python-version
